@@ -1,0 +1,365 @@
+/* =========================
+   Courses Section
+========================= */
+
+.courses-section {
+  width: 100%;
+  padding: 90px 7%;
+  background: #f5f7f2;
+  box-sizing: border-box;
+}
+
+/* =========================
+   Section Heading
+========================= */
+
+.courses-heading {
+  max-width: 750px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.courses-subtitle {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #4b1e0e;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.courses-heading h2 {
+  margin: 0 0 18px;
+  color: #173b2b;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.courses-heading h2 span {
+  color: #4b1e0e;
+}
+
+.courses-heading p {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================
+   Courses Grid
+   Laptop + Tablet: 3 Columns
+========================= */
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Course Card
+========================= */
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e7e9e3;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(23, 59, 43, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 16px 35px rgba(23, 59, 43, 0.15);
+}
+
+/* =========================
+   Course Image
+========================= */
+
+.course-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #e6ebe3;
+}
+
+.course-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.course-card:hover .course-image img {
+  transform: scale(1.06);
+}
+
+/* =========================
+   Course Content
+========================= */
+
+.course-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px;
+}
+
+.course-content h3 {
+  margin: 0 0 12px;
+  color: #173b2b;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.course-distance {
+  margin: 0 0 15px;
+  color: #4b1e0e;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.course-description {
+  flex: 1;
+  margin: 0 0 22px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* =========================
+   Join Button
+========================= */
+
+.course-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 12px 18px;
+  color: #ffffff;
+  background: #ed5e26;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.callback-content h2 {
+  margin: 0;
+
+  font-size: clamp(40px, 5vw, 65px);
+  line-height: 1.05;
+}
+
+.callback-content h2 span {
+  display: block;
+}
+
+.orange-text {
+  color: #ff671f;
+}
+
+.white-text {
+  color: #f6eeee;
+  background-color: #000000;
+}
+
+.green-text {
+  color: #138808;
+}
+
+.course-btn span {
+  font-size: 20px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.course-btn:hover {
+  color: #000000;
+  background: transparent;
+}
+
+.course-btn:hover span {
+  transform: translateX(5px);
+}
+  /* ========================================
+   LEFT CONTENT
+======================================== */
+
+.callback-content {
+  text-align: left;
+}
+
+.callback-tag {
+  display: inline-block;
+  color: #4f8f32;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.callback-content h2 {
+  margin: 0;
+  font-size: clamp(40px, 5vw, 65px);
+  line-height: 1.05;
+}
+
+.callback-content h2 span {
+  display: block;
+}
+
+/* Tiranga Colors */
+.orange-text {
+  color: #ff671f;
+}
+
+.white-text {
+  color: #ffffff;
+  -webkit-text-stroke: 1.5px #18231d;
+}
+
+.green-text {
+  color: #138808;
+}
+
+.callback-content p {
+  max-width: 500px;
+  margin-top: 25px;
+  color: #66736b;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* =========================
+   Tablet
+   Teeno Cards Same Row
+========================= */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .courses-section {
+    padding: 70px 4%;
+  }
+
+  .courses-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .course-image {
+    height: 180px;
+  }
+
+  .course-content {
+    padding: 18px;
+  }
+
+  .course-content h3 {
+    font-size: 18px;
+  }
+
+  .course-distance {
+    font-size: 12px;
+  }
+
+  .course-description {
+    font-size: 13px;
+  }
+
+  .course-btn {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 8px;
+    font-size: 12px;
+  }
+}
+
+/* =========================
+   Mobile
+   Cards Column Wise
+========================= */
+
+@media (max-width: 600px) {
+  .courses-section {
+    padding: 60px 5%;
+  }
+
+  .courses-heading {
+    margin-bottom: 35px;
+  }
+
+  .courses-heading h2 {
+    font-size: 29px;
+  }
+
+  .courses-heading p {
+    font-size: 14px;
+  }
+
+  .courses-subtitle {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .courses-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .course-image {
+    height: 220px;
+  }
+
+  .course-content {
+    padding: 22px;
+  }
+
+  .course-content h3 {
+    font-size: 20px;
+  }
+
+  .course-distance {
+    font-size: 13px;
+  }
+
+  .course-description {
+    font-size: 14px;
+  }
+
+  .course-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.course-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  align-items: stretch;
+}
+
+
+.course-btn {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}

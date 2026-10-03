@@ -1,0 +1,15 @@
+
+
+  
+
+ 
+
+  body {
+  margin: 0;
+  min-width: 320px;
+  background: #F5F7F2;
+  font-family: Arial, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}

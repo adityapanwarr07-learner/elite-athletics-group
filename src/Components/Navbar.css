@@ -1,0 +1,151 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 7%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+
+.logo h2 {
+  font-size: 20px;
+  color:#2f2626;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo span {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #8e8902;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #001e35a3;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #8200fb;
+  
+}
+
+
+.join-btn {
+  background-color: #4b1e0e;
+  color: aliceblue;
+  border: none;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+.join-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* .join-btn,
+.join-btn:visited,
+.join-btn:hover,
+.join-btn:active {
+  color: aliceblue;
+  text-decoration: none;
+} */
+ 
+/* Tablet Responsive */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 18px 4%;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .logo h2 {
+    font-size: 21px;
+  }
+
+  .logo span {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .join-btn {
+    padding: 12px 16px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px 5%;
+    gap: 10px;
+  }
+
+  /* Mobile par navigation links hide */
+  .nav-links {
+    display: none;
+  }
+
+  /* Logo ko left side rakho */
+  .logo {
+    flex-shrink: 0;
+  }
+
+  .logo h2 {
+    font-size: 20px;
+  }
+
+  .logo span {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  /* Join Us ko right side rakho */
+  .join-btn {
+    padding: 12px 15px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
